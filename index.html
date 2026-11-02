@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nikhil Vardhan Maroju, Marketing Analyst and Strategist</title>
+<meta name="description" content="Portfolio of Nikhil Vardhan Maroju: marketing analytics and marketing strategy. Turning data into decisions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&family=Caveat:wght@600&family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&family=Playfair+Display:wght@400&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: light dark;
+  --paper: #241a12;
+  --card: #3a2a1c;
+  --ink: #f7ead0;
+  --muted: #c9b294;
+  --line: #41301f;
+  --accent: #C8792C;
+  --accent-strong: #F4D9A0;
+  --accent-soft: rgba(200, 121, 44, 0.14);
+  --surface-one: #2e2118;
+  --surface-two: #3a2a1c;
+  --surface-three: #41301f;
+  --nav: rgba(36, 26, 18, 0.94);
+  --hint: rgba(46, 33, 24, 0.92);
+  --strategist: #F4D9A0;
+  --strategist-active: #fbe9c2;
+  --strategist-ink: #5B4632;
+  --split: 0.5;
+  --site-nav-height: 4.3rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #241a12; --card: #3a2a1c; --ink: #f7ead0; --muted: #c9b294;
+    --line: #41301f; --accent: #C8792C; --accent-strong: #F4D9A0;
+    --accent-soft: rgba(200, 121, 44, 0.14); --surface-one: #2e2118;
+    --surface-two: #3a2a1c; --surface-three: #41301f; --nav: rgba(36, 26, 18, 0.94);
+    --hint: rgba(46, 33, 24, 0.92); --strategist: #F4D9A0;
+    --strategist-active: #fbe9c2; --strategist-ink: #5B4632;
+  }
+}
+::selection { background: #C8792C; color: #1d130c; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--site-nav-height) + 0.85rem); }
+body { margin: 0; padding-top: var(--site-nav-height); background: var(--paper); color: var(--ink); font-family: "Inter", system-ui, -apple-system, sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+button { font: inherit; }
+.site-nav { position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 1000; display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 1.5rem; background: var(--nav); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.brand { font-family: "Archivo", sans-serif; font-weight: 700; font-size: 1.25rem; letter-spacing: 0.04em; color: var(--ink); text-decoration: none; border: 2px solid var(--ink); width: 2.5rem; height: 2.5rem; display: inline-flex; align-items: center; justify-content: center; border-radius: 0.5rem; }
+.site-nav nav { display: flex; gap: 1.5rem; }
+.site-nav nav a { color: var(--muted); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+.site-nav nav a:hover, .site-nav nav a:focus-visible { color: var(--accent-strong); }
+.hero { position: relative; display: flex; min-height: 88vh; overflow: hidden; }
+.side { flex: 1 1 0; min-width: 0; display: flex; align-items: center; justify-content: center; padding: 4rem 2rem; cursor: pointer; transition: background-color 0.35s ease; outline: none; }
+.side-left { background: #ffffff; }
+.side-right { background: #ffffff; }
+.side:focus-visible { box-shadow: inset 0 0 0 3px var(--accent); }
+.side-inner { max-width: 26rem; opacity: 0.72; transition: opacity 0.35s ease, transform 0.35s ease; }
+.side.active .side-inner { opacity: 1; }
+.side.active.side-left { background: #ffffff; }
+.side.active.side-right { background: #ffffff; }
+.eyebrow { font-family: "Archivo", sans-serif; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent-strong); margin: 0 0 1rem; }
+.side-copy { font-family: "Caveat", cursive; font-size: clamp(1.4rem, 2.4vw, 2rem); font-weight: 600; line-height: 1.3; margin: 0 0 1.5rem; letter-spacing: -0.01em; }
+.side-tags, .project-tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.side-tags li { font-size: 0.8rem; font-weight: 500; color: #404040; border: 1px solid #d4d4d8; background: #f5f5f5; border-radius: 999px; padding: 0.3rem 0.8rem; }
+.side-tags { flex-wrap: nowrap; gap: 0.35rem; }
+.side-tags li { font-size: 0.68rem; padding: 0.28rem 0.55rem; white-space: nowrap; }
+@media (max-width: 1150px) and (min-width: 901px) {
+  .side-tags { gap: 0.28rem; }
+  .side-tags li { font-size: 0.55rem; padding: 0.25rem 0.4rem; }
+}
+@media (max-width: 480px) {
+  .side-tags { gap: 0.25rem; }
+  .side-tags li { font-size: 0.52rem; padding: 0.24rem 0.35rem; }
+}
+@media (max-width: 380px) {
+  .side-tags li { font-size: 0.46rem; padding: 0.22rem 0.3rem; }
+}
+.project-tags li { font-size: 0.78rem; font-weight: 600; color: var(--muted); border: 1px solid var(--line); background: var(--card); border-radius: 999px; padding: 0.3rem 0.75rem; }
+.side-right .side-inner { opacity: 1; }
+.side-right .side-copy { color: #404040; }
+.side-right:not(.active) .side-copy { opacity: 0.72; }
+.side-right .eyebrow { color: #1a1a1a; }
+.side-right .side-tags li { color: #404040; border-color: #d4d4d8; background: #f5f5f5; }
+.portrait { position: absolute; left: 50%; bottom: 0; height: 65%; aspect-ratio: 1 / 1; max-width: 94vw; transform: translateX(calc(-50% + (0.5 - var(--split)) * 16vw)); pointer-events: none; z-index: 5; }
+.portrait-img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; object-fit: contain; object-position: bottom center; transition: opacity 0.45s ease; }
+.portrait-img-left { opacity: 1; }
+.portrait-img-right { opacity: 0; }
+.portrait.show-right .portrait-img-left { opacity: 0; }
+.portrait.show-right .portrait-img-right { opacity: 1; }
+.hero-hint { position: absolute; bottom: 1.25rem; left: 50%; transform: translateX(-50%); margin: 0; font-size: 0.8rem; color: #525252; background: #ffffff; border: 1px solid #d4d4d8; border-radius: 999px; padding: 0.4rem 1rem; white-space: nowrap; }
+.marquee { position: relative; overflow: hidden; background: transparent; color: var(--ink); padding: 0.7rem 0; margin-top: 2.5rem; }
+.marquee-track { display: inline-flex; white-space: nowrap; animation: marquee 40s linear infinite; will-change: transform; }
+.marquee.is-paused .marquee-track { animation-play-state: paused; }
+.marquee-chunk { font-family: "Anton", "Archivo", sans-serif; font-weight: 400; font-size: clamp(1.76rem, 4.8vw, 3.6rem); letter-spacing: 0.01em; line-height: 1.1; padding-right: 0.5em; }
+.marquee-word-pale { color: #FFFDF6; }
+.marquee-word-gold { color: var(--accent-strong); }
+.marquee-toggle { position: absolute; z-index: 2; right: 1rem; top: 50%; transform: translateY(-50%); display: grid; place-items: center; width: 2.2rem; height: 2.2rem; padding: 0; color: var(--ink); background: rgba(36, 26, 18, 0.94); border: 1px solid var(--line); border-radius: 50%; cursor: pointer; box-shadow: 0 0 0 0.45rem rgba(36, 26, 18, 0.72); }
+.marquee-toggle:hover, .marquee-toggle:focus-visible { color: var(--accent-strong); border-color: var(--accent); outline: none; }
+.marquee-toggle svg { display: block; width: 0.95rem; height: 0.95rem; fill: currentColor; }
+.marquee-toggle .icon-play { display: none; }
+.marquee-toggle[aria-pressed="true"] .icon-play { display: block; }
+.marquee-toggle[aria-pressed="true"] .icon-pause { display: none; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.content-section { max-width: 74rem; margin: 0 auto; padding: 6.5rem 1.5rem; border-bottom: 1px solid var(--line); }
+.section-head { display: grid; grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr); gap: 3rem; align-items: end; margin-bottom: 3rem; }
+.section-head h2 { font-family: "Archivo", sans-serif; font-size: clamp(2.25rem, 5vw, 4.75rem); line-height: 0.98; letter-spacing: -0.055em; margin: 0; max-width: 12ch; }
+.section-lede { color: var(--muted); font-size: clamp(1rem, 1.5vw, 1.15rem); max-width: 44rem; margin: 0; }
+.section-lede.projects-lede { font-family: "Poppins", sans-serif; font-weight: 500; }
+.section-lede.analyst-caption { font-family: "Poppins", sans-serif; font-weight: 500; }
+.section-lede.strategist-caption { font-family: "Poppins", sans-serif; font-weight: 500; }
+.projects { display: flex; flex-direction: column; gap: clamp(3.5rem, 6vw, 5.5rem); }
+.project-feature { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr); gap: clamp(2rem, 4.5vw, 4rem); align-items: center; }
+.project-feature-media { display: block; border-radius: 2rem; cursor: pointer; box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.45), 0 0.5rem 1.25rem rgba(0, 0, 0, 0.35); transition: transform 0.35s ease, box-shadow 0.35s ease; }
+.project-feature-media img { display: block; width: 100%; height: auto; border-radius: 2rem; }
+.project-feature-media:hover { transform: translateY(-4px); box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.55), 0 0.75rem 1.5rem rgba(0, 0, 0, 0.4); }
+.project-feature-media:focus-visible { outline: 3px solid var(--accent-strong); outline-offset: 5px; }
+.project-feature-copy h3 { font-family: "Poppins", sans-serif; font-weight: 400; font-size: clamp(1.65rem, 2.6vw, 2.35rem); line-height: 1.28; margin: 0 0 1.25rem; letter-spacing: -0.01em; color: var(--ink); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 0.18em; }
+.project-feature-copy h3 a { color: inherit; border-radius: 0.15em; padding: 0 0.1em; margin: 0 -0.1em; -webkit-box-decoration-break: clone; box-decoration-break: clone; transition: background-color 0.25s ease, color 0.25s ease; }
+.project-feature-copy h3 a:hover { background: var(--accent); color: #000000; }
+.project-feature-copy h3 a:focus-visible { background: var(--accent); color: #000000; outline: 3px solid var(--accent-strong); outline-offset: 3px; }
+.project-feature-copy p { font-family: "Poppins", sans-serif; font-weight: 400; font-size: clamp(0.98rem, 1.25vw, 1.08rem); line-height: 1.7; margin: 0; color: var(--ink); }
+.view-more-btn { display: inline-flex; align-items: center; gap: 0.6rem; margin-top: 1.75rem; padding: 0.85rem 1.65rem; background: #3e2716; color: var(--ink); border: 1px solid rgba(244, 217, 160, 0.35); border-radius: 999px; font-family: "Fraunces", Georgia, serif; font-size: 1.08rem; line-height: 1.2; text-decoration: underline; text-underline-offset: 0.18em; box-shadow: 0 0.75rem 1.75rem rgba(0, 0, 0, 0.35); transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease; }
+.view-more-btn .view-more-arrow { color: var(--accent-strong); font-family: "Inter", system-ui, sans-serif; font-size: 1.3rem; line-height: 1; text-decoration: none; transition: transform 0.3s ease, color 0.3s ease; }
+.view-more-btn:hover, .view-more-btn:focus-visible { background: var(--accent); color: #000000; border-color: var(--accent); }
+.view-more-btn:hover .view-more-arrow, .view-more-btn:focus-visible .view-more-arrow { color: #000000; }
+.view-more-btn:hover .view-more-arrow, .view-more-btn:focus-visible .view-more-arrow { transform: translateX(0.25rem); }
+.view-more-btn:focus-visible { outline: 3px solid var(--accent-strong); outline-offset: 4px; }
+.project-item { display: flex; flex-direction: column; max-width: 56rem; }
+.project-item h3 { font-family: "Archivo", sans-serif; font-size: clamp(1.25rem, 2vw, 1.65rem); line-height: 1.25; margin: 1.25rem 0 1.4rem; letter-spacing: -0.02em; }
+.project-rows { margin: 0; display: grid; gap: 0.85rem; }
+.project-row { display: grid; grid-template-columns: 6.8rem 1fr; gap: 1rem; padding-top: 0.85rem; border-top: 1px solid var(--line); }
+.project-row dt { font-family: "Archivo", sans-serif; color: var(--accent-strong); font-weight: 700; font-size: 0.82rem; }
+.project-row dd { margin: 0; color: var(--muted); font-size: 0.92rem; }
+.text-link { display: inline-flex; align-items: center; gap: 0.5rem; align-self: flex-start; color: var(--ink); font-weight: 700; text-decoration: none; margin-top: auto; padding-top: 1.5rem; }
+.text-link::after { content: "↗"; color: var(--accent-strong); }
+.text-link.local::after { content: "→"; }
+.text-link:hover, .text-link:focus-visible { color: var(--accent-strong); }
+.about-grid { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.about-photo { margin: 0; width: 100%; position: relative; }
+.about-photo img { position: relative; z-index: 1; display: block; width: 100%; height: auto; border: 0; border-radius: 0.75rem; box-shadow: 0 1.5rem 3rem rgba(110, 72, 14, 0.62), 0 0.5rem 1.25rem rgba(82, 53, 9, 0.55), 0 0 2.5rem rgba(146, 101, 24, 0.38); transform: translateY(0); transition: transform 0.9s cubic-bezier(0.37, 0, 0.63, 1); }
+.about-photo:hover img { animation: aboutFloat 6s ease-in-out infinite; will-change: transform; }
+@keyframes aboutFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+@media (prefers-reduced-motion: reduce) {
+  .about-photo img, .about-photo:hover img { animation: none !important; transform: none !important; will-change: auto; transition: none !important; }
+}
+.about-copy p { margin: 0 0 1rem; color: var(--muted); font-size: 1.04rem; }
+.about-copy p:first-child { color: var(--ink); font-size: clamp(1.25rem, 2vw, 1.65rem); line-height: 1.45; }
+.timeline { grid-column: 1 / -1; position: relative; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); margin: 1.5rem 0 0; padding: 0; min-height: 23rem; list-style: none; isolation: isolate; }
+.timeline::before { content: ""; position: absolute; z-index: -1; left: 1rem; right: 1rem; top: 50%; height: 2px; transform: translateY(-1px); background: linear-gradient(90deg, transparent, var(--accent) 8%, var(--accent) 92%, transparent); }
+.timeline li { position: relative; display: grid; grid-template-rows: 1fr 3.5rem 1fr; min-width: 0; height: 23rem; }
+.timeline-date { z-index: 2; grid-row: 2; display: grid; place-items: center; width: calc(100% + 0.65rem); margin-left: -0.65rem; padding: 0 1rem 0 1.45rem; clip-path: polygon(0 0, calc(100% - 1.05rem) 0, 100% 50%, calc(100% - 1.05rem) 100%, 0 100%, 1.05rem 50%); background: linear-gradient(135deg, #F4D9A0 0%, #e5c07f 45%, #C8792C 100%); color: #241a12; box-shadow: 0 0.7rem 1.5rem rgba(0, 0, 0, 0.24); }
+.timeline li:first-child .timeline-date { width: 100%; margin-left: 0; padding-left: 1rem; clip-path: polygon(0 0, calc(100% - 1.05rem) 0, 100% 50%, calc(100% - 1.05rem) 100%, 0 100%); }
+.timeline time { color: #241a12; font-family: "Archivo", sans-serif; font-weight: 700; font-size: 0.84rem; letter-spacing: 0.01em; white-space: nowrap; }
+.timeline-info { position: relative; display: flex; align-items: center; gap: 0.7rem; min-width: 0; padding: 0.45rem; }
+.timeline li:nth-child(odd) .timeline-info { grid-row: 1; align-self: end; margin-bottom: 2rem; }
+.timeline li:nth-child(even) .timeline-info { grid-row: 3; align-self: start; margin-top: 2rem; }
+.timeline li:nth-child(odd) .timeline-info::after, .timeline li:nth-child(even) .timeline-info::before { content: ""; position: absolute; left: 2.85rem; width: 2px; height: 2rem; background: linear-gradient(var(--accent), rgba(200, 121, 44, 0.2)); }
+.timeline li:nth-child(odd) .timeline-info::after { bottom: -2rem; }
+.timeline li:nth-child(even) .timeline-info::before { top: -2rem; transform: rotate(180deg); }
+.timeline-logo { display: grid; flex: 0 0 78px; place-items: center; width: 78px; height: 78px; padding: 8px; border-radius: 50%; background: #ffffff; box-shadow: 0 0.55rem 1.25rem rgba(0, 0, 0, 0.3); transition: box-shadow 0.3s ease, transform 0.3s ease; }
+.timeline-logo img { display: block; width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
+a.timeline-logo:focus-visible { outline: 3px solid var(--accent-strong); outline-offset: 3px; box-shadow: 0 0 0 3px rgba(244, 217, 160, 0.65), 0 0 1.5rem rgba(200, 121, 44, 0.72), 0 0.8rem 1.5rem rgba(0, 0, 0, 0.34); }
+.timeline-logo.monogram { padding: 0; color: #241a12; background: linear-gradient(145deg, #efc688, #a86634); font-family: "Fraunces", Georgia, serif; font-size: 1.25rem; font-weight: 600; letter-spacing: -0.04em; }
+.timeline li:hover .timeline-logo { transform: translateY(-2px); box-shadow: 0 0 0 3px rgba(244, 217, 160, 0.65), 0 0 1.5rem rgba(200, 121, 44, 0.72), 0 0.8rem 1.5rem rgba(0, 0, 0, 0.34); }
+.timeline-copy { min-width: 0; }
+.timeline-role { display: block; color: var(--ink); font-family: "Archivo", sans-serif; font-size: 0.86rem; font-weight: 600; line-height: 1.28; }
+.timeline-org { display: block; margin-top: 0.2rem; color: var(--muted); font-size: 0.74rem; line-height: 1.25; }
+.credentials-section { max-width: 74rem; margin: 0 auto; padding: 6.5rem 1.5rem; border-bottom: 1px solid var(--line); }
+.credential-groups { display: grid; grid-template-columns: 1.45fr 1fr 0.75fr; gap: 1rem; align-items: start; }
+.credential-group { background: var(--surface-one); border-top: 3px solid var(--accent); padding: 1.4rem; }
+.credential-group h3 { font-family: "Archivo", sans-serif; font-size: 1rem; margin: 0 0 1rem; }
+.credential-list { display: grid; gap: 0.55rem; }
+.credential-item { display: flex; align-items: center; gap: 0.8rem; margin: 0; min-height: 62px; padding: 0.55rem 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+.credential-item a { display: flex; align-items: center; gap: 0.8rem; color: inherit; text-decoration: none; }
+.credential-logo { display: grid; flex: 0 0 46px; place-items: center; width: 46px; height: 46px; padding: 5px; border-radius: 10px; background: #ffffff; box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.22); }
+.credential-logo img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.industries-section { max-width: 74rem; margin: 0 auto; padding: 4rem 1.5rem; border-bottom: 1px solid var(--line); background: radial-gradient(65% 85% at 50% 42%, rgba(200, 121, 44, 0.08), rgba(200, 121, 44, 0) 70%); }
+.industries-head { text-align: center; margin-bottom: 2.25rem; }
+.industries-title { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: clamp(1.9rem, 3.6vw, 2.85rem); line-height: 1.08; letter-spacing: -0.03em; margin: 0; color: var(--ink); }
+.industries-title span { color: var(--accent-strong); font-style: italic; }
+.industries-title::after { content: ""; display: block; width: 4.5rem; height: 2px; margin: 1rem auto 0; background: linear-gradient(90deg, transparent, var(--accent), transparent); }
+.industries-grid { list-style: none; margin: 0; padding: 0 0 0.35rem 0.35rem; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+/* Each industry is a flat, sharp brick: a crisp rectangle with square
+   corners, a flat face, and one hard offset edge shadow — no tilt, no
+   rounded deck, no blurred cast shadow, no cartoon shading. */
+.industry-item { position: relative; display: grid; min-height: 5.5rem; outline: none; cursor: default; }
+.industry-name { position: relative; display: grid; place-items: center; text-align: center; padding: 1rem 0.9rem; border: 1px solid #57402a; border-top: 3px solid var(--accent); border-radius: 0; color: var(--ink); font-family: "Archivo", sans-serif; font-weight: 600; font-size: 0.98rem; line-height: 1.35; background: #2f2115; box-shadow: -5px 5px 0 rgba(0, 0, 0, 0.45); cursor: default; transition: transform 0.25s ease; }
+/* Hover/focus is motion only: a subtle straight lift. Border, background,
+   text color, and shadow stay exactly as at rest — the tiles are not
+   links, so nothing may read as selection, and there is no pointer cursor. */
+.industry-item:hover .industry-name, .industry-item:focus-visible .industry-name { transform: translateY(-4px); }
+@media (prefers-reduced-motion: reduce) {
+  .industry-name { transition: none; }
+  .industry-item:hover .industry-name, .industry-item:focus-visible .industry-name { transform: none; }
+}
+@media (max-width: 900px) {
+  .industries-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  .industries-section { padding: 3.25rem 1rem; }
+  .industries-grid { gap: 1.15rem 0.8rem; }
+  .industry-item { min-height: 4.9rem; }
+  .industry-name { font-size: 0.9rem; padding: 0.85rem 0.6rem; }
+}
+.contact-layout { display: grid; grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr); gap: 3rem; align-items: start; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; grid-column: 1 / -1; justify-content: center; align-items: center; }
+.contact-button { display: inline-flex; align-items: center; justify-content: center; font-weight: 700; color: #1d130c; background: var(--accent); text-decoration: none; border: 2px solid var(--accent); border-radius: 0.55rem; padding: 0.72rem 1.15rem; }
+.contact-button.secondary { color: var(--ink); background: transparent; }
+.contact-button:hover, .contact-button:focus-visible { background: var(--accent-strong); border-color: var(--accent-strong); color: #1d130c; }
+.contact-button.secondary:hover, .contact-button.secondary:focus-visible { background: rgba(200, 121, 44, 0.14); border-color: var(--accent-strong); color: var(--accent-strong); text-shadow: 0 0 0.45em rgba(244, 217, 160, 0.95), 0 0 1.1em rgba(244, 217, 160, 0.65), 0 0 2em rgba(200, 121, 44, 0.55); box-shadow: 0 0 1.1rem rgba(200, 121, 44, 0.35), 0 0 2.2rem rgba(244, 217, 160, 0.22); }
+/* Contact headline refresh */
+#contact .contact-title { max-width: none; font-size: clamp(2rem, 3.4vw, 3.25rem); line-height: 1.05; }
+.contact-title span { display: block; }
+.contact-title span:nth-child(2) { margin-left: clamp(1rem, 2.5vw, 2rem); font-style: italic; color: var(--accent-strong); }
+#contact .section-head { align-items: start; }
+#contact .contact-lede { font-family: "Poppins", sans-serif; font-weight: 400; margin-top: 2.88rem; }
+@media (max-width: 900px) {
+  #contact .contact-lede { margin-top: 0; }
+}
+.js #contact .section-head:not(.is-revealed) .contact-title span { transform: translateY(0.55rem); }
+#contact .section-head.is-revealed .contact-title span { transform: translateY(0); transition: transform 0.75s cubic-bezier(0.2, 0.8, 0.2, 1); }
+#contact .section-head.is-revealed .contact-title span:nth-child(2) { transition-delay: 0.14s; }
+@media (prefers-reduced-motion: reduce) {
+  #contact .contact-title span { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
+.writing { grid-column: 1 / -1; background: transparent; border: none; border-radius: 0; padding: 0; box-shadow: none; }
+.blog-block { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 1.75rem; padding: 1.6rem 1.75rem; background: linear-gradient(150deg, rgba(58,42,28,.9), rgba(46,33,24,.96)); border: 1px solid var(--line); border-top: 3px solid var(--accent); color: var(--ink); }
+.blog-block-logo-link { flex: 0 0 auto; display: block; border-radius: 58% 42% 55% 45% / 55% 55% 45% 45%; text-decoration: none; }
+.blog-block-logo-link:focus-visible { outline: 3px solid var(--accent-strong); outline-offset: 5px; }
+.blog-block-logo-shape { position: relative; display: grid; place-items: center; width: 9rem; height: 9rem; border-radius: 58% 42% 55% 45% / 55% 55% 45% 45%; background: linear-gradient(140deg, #F4D9A0 0%, #d99a45 55%, #C8792C 100%); box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.35); transition: transform 0.3s ease; }
+.blog-block-logo-shape::before { content: ""; position: absolute; inset: 0.45rem; border-radius: inherit; border: 1px solid rgba(36, 26, 18, 0.35); pointer-events: none; }
+.blog-block-logo-link:hover .blog-block-logo-shape, .blog-block-logo-link:focus-visible .blog-block-logo-shape { transform: translateY(-3px); }
+.blog-block-logo-shape img { display: block; width: 6.9rem; height: auto; border-radius: 50%; }
+.blog-block-copy { flex: 1 1 auto; min-width: 0; }
+.blog-block-eyebrow { display: block; font-family: "Archivo", sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent-strong); margin: 0 0 0.45rem; }
+.blog-block-title { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: clamp(1.45rem, 2.4vw, 1.9rem); line-height: 1.15; margin: 0 0 0.5rem; color: var(--ink); }
+.blog-block-text { margin: 0; color: var(--muted); font-size: 0.98rem; line-height: 1.6; max-width: 38rem; }
+.blog-block-text strong { color: var(--accent-strong); font-weight: 600; }
+.blog-block-cta { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.8rem 1.35rem; border: 1px solid rgba(244, 217, 160, 0.45); border-radius: 999px; color: var(--accent-strong); font-family: "Archivo", sans-serif; font-weight: 700; font-size: 0.92rem; white-space: nowrap; text-decoration: none; transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease; }
+.blog-block-cta:hover, .blog-block-cta:focus-visible { background: var(--accent); border-color: var(--accent); color: #1d130c; }
+.blog-block-cta:focus-visible { outline: 3px solid var(--accent-strong); outline-offset: 4px; }
+@media (max-width: 680px) {
+  .blog-block { flex-direction: column; align-items: flex-start; padding: 1.4rem 1.25rem; gap: 1.15rem; }
+}
+.article-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.25rem; align-items: stretch; }
+.article-card { display: flex; flex-direction: column; height: 100%; overflow: hidden; border-radius: 0.6rem; background: #0b0b0b; color: #ffffff; text-decoration: none; border: 1px solid rgba(244, 217, 160, 0.28); box-shadow: 0 0 0.5rem rgba(200, 121, 44, 0.20), 0 0 1.3rem rgba(200, 121, 44, 0.13), 0 0 2.4rem rgba(184, 134, 11, 0.07), 0 1.25rem 2.5rem rgba(0, 0, 0, 0.5); transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; }
+.article-card:hover, .article-card:focus-visible { transform: translateY(-4px); border-color: rgba(244, 217, 160, 0.55); box-shadow: 0 0 0.7rem rgba(200, 121, 44, 0.30), 0 0 1.9rem rgba(200, 121, 44, 0.19), 0 0 3.2rem rgba(184, 134, 11, 0.10), 0 1.6rem 3rem rgba(0, 0, 0, 0.55); }
+.article-card:focus-visible { outline: 3px solid var(--accent-strong); outline-offset: 4px; }
+.article-card-media { display: block; background: #e9e7e2; }
+.article-card-media img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+.article-card-body { display: flex; flex-direction: column; gap: 0.6rem; flex: 1 1 auto; padding: 1rem 1.05rem 1.1rem; background: #0b0b0b; }
+.article-card-title { font-family: "Archivo", sans-serif; font-weight: 700; font-size: 0.98rem; line-height: 1.38; color: #ffffff; }
+.article-card-text { font-size: 0.86rem; line-height: 1.55; color: #d9d4cc; }
+.article-card-footer { display: flex; align-items: center; gap: 0.45rem; margin-top: auto; padding-top: 0.35rem; font-size: 0.78rem; font-weight: 500; color: #a8a29e; }
+.article-card-source { display: inline-grid; place-items: center; flex: 0 0 auto; width: 1.05rem; height: 1.05rem; border-radius: 0.2rem; background: #0a66c2; color: #ffffff; font-family: "Archivo", sans-serif; font-size: 0.6rem; font-weight: 700; line-height: 1; }
+@media (max-width: 1024px) {
+  .article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .article-grid { grid-template-columns: 1fr; }
+}
+.site-footer { text-align: center; padding: 2rem 1.5rem; color: var(--muted); font-size: 0.85rem; }
+@media (max-width: 900px) {
+  .hero { flex-direction: column; min-height: auto; }
+  .side { padding: 3rem 1.5rem; }
+  .portrait { position: relative; left: auto; bottom: auto; transform: none; order: 2; align-self: center; width: min(60vw, 19rem); height: auto; aspect-ratio: 1 / 1; margin: -1rem 0; z-index: 6; }
+  .side-left { order: 1; }
+  .side-right { order: 3; }
+  .hero-hint { display: none; }
+  .section-head, .about-grid, .contact-layout { grid-template-columns: 1fr; gap: 1.5rem; }
+  .about-photo { max-width: 280px; }
+  .project-feature { grid-template-columns: 1fr; gap: 1.75rem; }
+  .project-feature-media, .project-feature-media img { border-radius: 1.5rem; }
+  .credential-groups { grid-template-columns: 1fr 1fr; }
+  .credential-group:first-child { grid-row: span 2; }
+}
+@media (max-width: 680px) {
+  .site-nav { padding: 0.75rem 1rem; }
+  .site-nav nav { gap: 0.85rem; }
+  .site-nav nav a { font-size: 0.78rem; }
+  .brand { width: 2.1rem; height: 2.1rem; font-size: 1rem; }
+  .marquee-toggle { right: 0.65rem; width: 2rem; height: 2rem; }
+  .content-section, .credentials-section { padding: 4.5rem 1rem; }
+  .section-head { margin-bottom: 2rem; }
+  .project-row { grid-template-columns: 1fr; gap: 0.2rem; }
+  .credential-groups { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .marquee-track { animation: none; }
+  .marquee { text-align: center; }
+  .marquee-track .marquee-chunk[aria-hidden="true"] { display: none; }
+  .marquee-toggle { display: none; }
+  .side-inner, .side { transition: none; }
+}
+/* Premium motion and presentation layer */
+body { position: relative; isolation: isolate; overflow-x: hidden; }
+main, .site-footer { position: relative; z-index: 2; }
+.ambient-field { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+.ambient-blob { position: absolute; border-radius: 50%; filter: blur(72px); opacity: 0.2; will-change: transform; animation: ambientDrift 28s ease-in-out infinite alternate; }
+.ambient-blob.one { width: 42rem; height: 42rem; left: -15rem; top: 4rem; background: radial-gradient(circle, rgba(91,70,50,.9) 0%, rgba(91,70,50,0) 69%); }
+.ambient-blob.two { width: 38rem; height: 38rem; right: -12rem; top: 42%; background: radial-gradient(circle, rgba(244,217,160,.78) 0%, rgba(244,217,160,0) 70%); animation-delay: -9s; animation-direction: alternate-reverse; }
+.ambient-blob.three { width: 30rem; height: 30rem; left: 38%; bottom: -12rem; background: radial-gradient(circle, rgba(200,121,44,.56) 0%, rgba(200,121,44,0) 72%); animation-delay: -17s; }
+.ambient-field::after { content: ""; position: absolute; inset: 0; opacity: .035; background-image: repeating-radial-gradient(circle at 17% 23%, rgba(255,255,255,.65) 0 0.45px, transparent 0.7px 3px); background-size: 5px 5px; mix-blend-mode: soft-light; }
+@keyframes ambientDrift { 0% { transform: translate3d(-4%, -2%, 0) scale(1); } 50% { transform: translate3d(8%, 5%, 0) scale(1.08); } 100% { transform: translate3d(-1%, 11%, 0) scale(.94); } }
+
+.site-nav { position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 1000; padding: .78rem clamp(1rem, 3vw, 2.4rem); background: rgba(36,26,18,.78); backdrop-filter: blur(18px) saturate(125%); -webkit-backdrop-filter: blur(18px) saturate(125%); border-bottom-color: rgba(200,121,44,.4); }
+section[id], main[id] { scroll-margin-top: calc(var(--site-nav-height) + 0.85rem); }
+.brand { width: 2.65rem; height: 2.65rem; border-radius: 50%; border-color: rgba(200,121,44,.8); font-size: 1rem; transition: color .35s ease, background .35s ease, border-color .35s ease, transform .35s cubic-bezier(.2,.8,.2,1); }
+.brand:hover, .brand:focus-visible { color: #241a12; background: var(--accent); border-color: var(--accent); transform: rotate(-9deg); outline: none; }
+.brand-group { display: flex; align-items: center; gap: 0.85rem; min-width: 0; }
+.brand-group .brand { flex: 0 0 auto; }
+.header-name { font-family: "Archivo", sans-serif; font-weight: 700; font-size: clamp(0.95rem, 1.6vw, 1.15rem); letter-spacing: 0.14em; line-height: 1.15; color: var(--accent); white-space: nowrap; }
+@media (max-width: 680px) {
+  .brand-group { gap: 0.55rem; }
+  .header-name { font-size: 0.66rem; letter-spacing: 0.07em; }
+}
+.site-nav nav a { position: relative; padding: .5rem 0; color: #c9b294; }
+.site-nav nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: .28rem; height: 1px; background: var(--accent); transform: scaleX(0); transform-origin: right; transition: transform .35s cubic-bezier(.2,.8,.2,1); }
+.site-nav nav a:hover::after, .site-nav nav a:focus-visible::after { transform: scaleX(1); transform-origin: left; }
+
+.hero { min-height: min(88vh, 54rem); background: #ffffff; }
+.side { position: relative; isolation: isolate; overflow: hidden; padding: 5rem clamp(2rem, 5vw, 5.5rem); transition: background-color .45s ease; }
+.side::before { position: absolute; z-index: -1; top: 10%; font-family: "Fraunces", Georgia, serif; font-size: clamp(7rem, 17vw, 17rem); line-height: .8; color: transparent; -webkit-text-stroke: 1px rgba(0,0,0,.08); letter-spacing: -.08em; pointer-events: none; white-space: nowrap; transition: transform .18s linear, opacity .4s ease; }
+.side-left::before { content: "Analyst"; left: -10%; -webkit-text-stroke-color: rgba(0,0,0,.10); transform: translateX(var(--split-shift-left, 0px)); }
+.side-right::before { content: "Strategist"; right: -18%; -webkit-text-stroke-color: rgba(0,0,0,.10); transform: translateX(var(--split-shift-right, 0px)); }
+.side::after { content: ""; position: absolute; z-index: -2; inset: 0; opacity: 0; background: radial-gradient(circle at 50% 52%, rgba(0,0,0,.05), transparent 52%); transition: opacity .5s ease; }
+.side.active::after { opacity: 1; }
+.side-inner { position: relative; z-index: 2; max-width: 27rem; opacity: .68; transition: opacity .45s ease, transform .55s cubic-bezier(.2,.8,.2,1); }
+.side.active .side-inner { transform: translateY(-.4rem); }
+.side .eyebrow { font-family: "Fraunces", Georgia, serif; font-size: clamp(3.2rem, 6vw, 6.5rem); line-height: 1.18; padding-bottom: 0.22em; letter-spacing: -.06em; text-transform: none; max-width: 7ch; margin-bottom: 1.5rem; color: #1a1a1a; }
+.side .eyebrow span, .side .eyebrow em { display: block; }
+.side-left .eyebrow { color: #1a1a1a; }
+.side-left .eyebrow em { font-weight: 600; font-style: italic; color: #1a1a1a; background: linear-gradient(120deg, #111111 0%, #4b5563 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.side-right, .side-right .side-inner, .side-right .eyebrow { color: #1a1a1a; }
+.side-right .eyebrow em { font-style: normal; }
+.side-copy { color: #404040; font-family: "Caveat", cursive; font-size: clamp(1.55rem, 2.25vw, 1.95rem); font-weight: 600; line-height: 1.35; }
+.side-right .side-copy, .side-right:not(.active) .side-copy { color: #404040; opacity: .92; }
+.side-tags li { transition: transform .35s cubic-bezier(.2,.8,.2,1), border-color .35s ease, background .35s ease, color .35s ease; }
+.side.active .side-tags li { transform: translateY(-3px); border-color: #a1a1aa; color: #1a1a1a; background: #eeeeee; }
+.side-right.active .side-tags li { color: #1a1a1a; border-color: #a1a1aa; background: #eeeeee; }
+.portrait { z-index: 6; }
+.side-left { justify-content: flex-start; }
+.side-right { justify-content: flex-end; }
+.hero-hint { z-index: 8; color: #525252; background: #ffffff; border-color: #d4d4d8; box-shadow: 0 .7rem 2rem rgba(0,0,0,.08); animation: hintFloat 3.2s ease-in-out infinite; transition: opacity .45s ease, transform .45s ease; }
+.hero-hint.is-dismissed { opacity: 0; transform: translate(-50%, .6rem); pointer-events: none; }
+@keyframes dividerPulse { 0% { box-shadow: 0 0 0 0 rgba(200,121,44,.6); } 70%,100% { box-shadow: 0 0 0 16px rgba(200,121,44,0); } }
+@keyframes hintFloat { 0%,100% { margin-bottom: 0; } 50% { margin-bottom: .45rem; } }
+@keyframes heroEnter { from { opacity: 0; transform: translateY(1.1rem); } to { opacity: 1; transform: translateY(0); } }
+.side .eyebrow, .side .side-copy, .side .side-tags { opacity: 0; animation: heroEnter .85s cubic-bezier(.2,.8,.2,1) forwards; }
+.side .eyebrow { animation-delay: .12s; }
+.side .side-copy { animation-delay: .27s; }
+.side .side-tags { animation-delay: .42s; }
+.side-right .eyebrow { animation-delay: .22s; }
+.side-right .side-copy { animation-delay: .37s; }
+.side-right .side-tags { animation-delay: .52s; }
+
+.marquee { background: transparent; }
+
+/* My Story */
+.story-section { position: relative; border-bottom: 1px solid var(--line); background: var(--paper); }
+.story-clip { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.story-watermark { position: absolute; top: 50%; right: -1.5rem; transform: translateY(-50%) rotate(-4deg); font-family: "Fraunces", Georgia, serif; font-style: italic; font-weight: 600; font-size: clamp(11rem, 27vw, 24rem); line-height: 1; color: transparent; -webkit-text-stroke: 1px rgba(244,217,160,.07); user-select: none; }
+.story-grid { position: relative; z-index: 1; max-width: 74rem; margin: 0 auto; padding: 6.5rem 1.5rem; display: grid; grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr); gap: clamp(2.5rem, 6vw, 5.5rem); align-items: start; }
+.story-left { position: sticky; top: 6rem; align-self: start; }
+.story-rule { display: block; width: 3.75rem; height: 3px; background: linear-gradient(90deg, var(--accent), var(--accent-strong)); margin-bottom: 1.6rem; }
+.story-title { font-family: "Fraunces", Georgia, serif; font-style: italic; font-weight: 600; font-size: clamp(3.6rem, 8vw, 6.75rem); line-height: 1.12; padding-bottom: .14em; letter-spacing: -.03em; margin: 0; color: var(--ink); }
+.story-subtitle { font-family: "Fraunces", Georgia, serif; font-style: italic; font-size: clamp(1.35rem, 2.4vw, 1.9rem); color: var(--accent); margin: .6rem 0 0; }
+.story-flow { min-width: 0; }
+.story-lede { font-family: "Fraunces", Georgia, serif; font-size: clamp(1.3rem, 2.1vw, 1.7rem); line-height: 1.55; color: var(--ink); margin: 0 0 2.75rem; padding-left: 2.1rem; }
+.hl { background: none; background-image: none; color: inherit; padding: 0 .12em; border-radius: .12em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.story-lede .hl { color: var(--accent-strong); background-image: linear-gradient(100deg, #C8792C, #a8641f); background-repeat: no-repeat; background-size: 100% 100%; background-position: 0 0; transition: background-size .85s cubic-bezier(.2,.8,.2,1) var(--d, 0s), color .4s ease var(--d, 0s); }
+.js [data-reveal]:not(.is-revealed) .hl { background: none; background-image: none; color: inherit; }
+.js [data-reveal]:not(.is-revealed) .story-lede .hl { background-image: linear-gradient(100deg, #C8792C, #a8641f); background-repeat: no-repeat; background-size: 0% 100%; background-position: 0 0; color: inherit; }
+.story-beat { position: relative; padding-left: 2.1rem; margin: 0 0 2.4rem; }
+.story-beat p { margin: 0; color: var(--muted); font-size: 1.06rem; line-height: 1.75; }
+.story-diamond { position: absolute; left: .1rem; top: .62em; width: .55rem; height: .55rem; background: var(--accent); transform: rotate(45deg); box-shadow: 0 0 .9rem rgba(200,121,44,.55); }
+.story-close { margin: 3rem 0 0; padding: 1.9rem 0 0 2.1rem; border-top: 1px solid rgba(200,121,44,.4); font-family: "Archivo", sans-serif; font-weight: 700; font-size: clamp(1.15rem, 1.9vw, 1.45rem); line-height: 1.45; color: var(--ink); }
+.story-talk { position: relative; display: inline-flex; align-items: baseline; gap: .35rem; color: var(--accent-strong); text-decoration: none; white-space: nowrap; will-change: transform; transition: transform .18s ease, color .3s ease; }
+.story-talk::after { content: ""; position: absolute; left: 0; right: 0; bottom: -.18em; height: 2px; background: linear-gradient(90deg, var(--accent), var(--accent-strong)); transform: scaleX(0); transform-origin: right; transition: transform .45s cubic-bezier(.2,.8,.2,1); }
+.story-talk:hover, .story-talk:focus-visible { color: #fbe9c2; outline: none; }
+.story-talk:hover::after, .story-talk:focus-visible::after { transform: scaleX(1); transform-origin: left; }
+.story-arrow { display: inline-block; transition: transform .3s cubic-bezier(.2,.8,.2,1); }
+.story-talk:hover .story-arrow, .story-talk:focus-visible .story-arrow { transform: translateX(.35rem); }
+/* My Story — chaptered editorial treatment */
+.story-chapter { position: relative; padding-left: 3.75rem; }
+.story-lede-wrap { margin: 0 0 2.75rem; }
+.story-lede-wrap .story-lede { margin: 0; padding-left: 0; }
+.story-chapter::after { content: ""; position: absolute; left: 2.52rem; top: 0; bottom: -2.5rem; width: 1px; background: rgba(200,121,44,.52); }
+.story-lede-wrap::after { bottom: -2.85rem; }
+.story-flow > .story-chapter:last-of-type::after { bottom: .35rem; }
+.js .story-chapter::after { transform: scaleY(0); transform-origin: top; transition: transform 1.1s cubic-bezier(.2,.8,.2,1) .25s; }
+.js .story-chapter.is-revealed::after { transform: scaleY(1); }
+.story-chapter-num { position: absolute; left: 0; top: .18em; z-index: 2; font-family: "Archivo", sans-serif; font-size: .82rem; font-weight: 700; letter-spacing: .14em; color: var(--accent-strong); }
+.story-lede-wrap .story-chapter-num { top: .55em; }
+.story-diamond { left: 2.25rem; z-index: 2; }
+.story-lede::first-letter { float: left; font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 3.35em; line-height: .78; padding: .05em .16em 0 0; color: var(--accent-strong); }
+.story-chapter p { transition: color .4s ease, filter .4s ease; }
+.story-chapter:hover p { filter: brightness(1.14); }
+.story-beat:hover p { color: #e2cda1; }
+.story-close { padding-left: 3.75rem; }
+@media (max-width: 900px) {
+  .story-grid { grid-template-columns: 1fr; gap: 2.75rem; padding: 4.5rem 1.5rem; }
+  .story-left { position: static; }
+  .story-watermark { font-size: clamp(7rem, 34vw, 11rem); right: -1rem; }
+}
+@media (max-width: 680px) {
+  .story-grid { padding: 4.5rem 1rem; }
+  .story-chapter { padding-left: 3.05rem; }
+  .story-lede { padding-left: 0; }
+  .story-chapter::after { left: 2.02rem; }
+  .story-diamond { left: 1.75rem; }
+  .story-close { padding: 1.9rem 0 0 3.05rem; }
+}
+/* Business analysis branch map — featured diagram in the Approach section */
+.branch-map { position: relative; left: 50%; transform: translateX(-50%); width: min(1200px, calc(100vw - 3rem)); max-width: none; margin: 1rem 0 0; }
+.branch-map::before { content: ""; position: absolute; inset: -4rem -4.5rem; z-index: -1; border-radius: 50%; background: radial-gradient(ellipse at center, rgba(200, 121, 44, 0.48) 0%, rgba(244, 217, 160, 0.22) 42%, transparent 72%); filter: blur(34px); pointer-events: none; }
+.branch-map img { display: block; width: 100%; height: auto; border: 2px solid rgba(244, 217, 160, 0.65); border-radius: 14px; box-shadow: 0 3.5rem 7rem 1.5rem rgba(0, 0, 0, 0.78), 0 1.5rem 3.5rem 0.5rem rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(0, 0, 0, 0.35), 0 0 6rem 1rem rgba(200, 121, 44, 0.42), 0 0 2.75rem rgba(244, 217, 160, 0.38); }
+.branch-map-link { display: block; cursor: pointer; border-radius: 14px; }
+button.branch-map-link { width: 100%; padding: 0; border: 0; background: transparent; font: inherit; color: inherit; text-align: inherit; -webkit-appearance: none; appearance: none; }
+.branch-map-link:focus-visible { outline: 3px solid var(--accent-strong); outline-offset: 5px; }
+/* Framework lightbox — on-page overlay for the two framework diagrams */
+.framework-lightbox { position: fixed; inset: 0; z-index: 9999; background: rgba(24, 15, 9, 0.94); opacity: 0; transition: opacity 0.22s ease; }
+.framework-lightbox[hidden] { display: none; }
+.framework-lightbox.is-open { opacity: 1; }
+.framework-lightbox-scroll { position: absolute; inset: 0; overflow: hidden; display: grid; place-items: center; padding: 4.5rem 1.25rem 4rem; }
+.framework-lightbox-img { display: block; max-width: calc(100vw - 2.5rem); max-height: calc(100vh - 8.5rem); width: auto; height: auto; object-fit: contain; background: #ffffff; border-radius: 10px; box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.6), 0 0 3rem rgba(200, 121, 44, 0.3); transform: scale(0.97); transition: transform 0.22s ease; }
+.framework-lightbox.is-open .framework-lightbox-img { transform: scale(1); }
+.framework-lightbox-close { position: absolute; top: 1rem; right: 1rem; z-index: 2; width: 2.75rem; height: 2.75rem; display: grid; place-items: center; border-radius: 50%; border: 1px solid rgba(244, 217, 160, 0.55); background: rgba(46, 33, 24, 0.95); color: #f7ead0; font-size: 1.6rem; line-height: 1; cursor: pointer; transition: background 0.2s ease, color 0.2s ease; }
+.framework-lightbox-close:hover { background: var(--accent-strong); color: #241a12; }
+.framework-lightbox-close:focus-visible { outline: 3px solid var(--accent-strong); outline-offset: 3px; }
+@media (max-width: 680px) {
+  .framework-lightbox-scroll { padding: 4.25rem 0.75rem 4.5rem; }
+  .framework-lightbox-img { max-width: calc(100vw - 1.5rem); max-height: calc(100vh - 8.75rem); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .framework-lightbox, .framework-lightbox-img { transition: none !important; }
+  .framework-lightbox-img { transform: none !important; }
+}
+.branch-map-hint { margin: 0.9rem 0 0; text-align: center; font-family: "Poppins", sans-serif; font-weight: 400; font-size: 0.85rem; color: var(--muted); }
+.branch-map-head { margin-top: 4.5rem; }
+@media (max-width: 680px) {
+  .branch-map { margin-top: 0.5rem; width: calc(100vw - 2rem); }
+  .branch-map::before { inset: -1.25rem -0.75rem; }
+  .branch-map img { border-radius: 10px; }
+  .branch-map-link { border-radius: 10px; }
+}
+/* Beats entry — wider, rebalanced two-column layout (this entry only) */
+.project-feature.project-feature--beats { width: min(86rem, calc(100vw - 3rem)); margin-left: calc((100% - min(86rem, calc(100vw - 3rem))) / 2); grid-template-columns: minmax(0, 0.74fr) minmax(0, 1.26fr); gap: clamp(2rem, 4vw, 3.5rem); }
+/* Other project entries — same rebalance as Beats: wider text column, narrower image column */
+.project-feature.project-feature--rebalanced { width: min(86rem, calc(100vw - 3rem)); margin-left: calc((100% - min(86rem, calc(100vw - 3rem))) / 2); grid-template-columns: minmax(0, 0.74fr) minmax(0, 1.26fr); gap: clamp(2rem, 4vw, 3.5rem); }
+@media (max-width: 900px) {
+  .project-feature.project-feature--beats { width: 100%; margin-left: 0; grid-template-columns: 1fr; }
+  .project-feature.project-feature--rebalanced { width: 100%; margin-left: 0; grid-template-columns: 1fr; }
+}
+.content-section, .credentials-section { position: relative; }
+.section-head h2 { position: relative; display: inline-block; font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-spacing: -.045em; }
+.section-head h2::after { content: ""; display: block; width: min(7rem, 50%); height: 2px; margin-top: .75rem; background: linear-gradient(90deg, var(--accent-strong), transparent); transform: scaleX(0); transform-origin: left; transition: transform .85s cubic-bezier(.2,.8,.2,1) .15s; }
+.section-head.is-revealed h2::after { transform: scaleX(1); }
+.about-roles span { display: block; }
+.about-roles span:nth-child(2) { margin-left: clamp(1.25rem, 3.5vw, 2.75rem); font-style: italic; color: var(--accent-strong); }
+.about-roles span:nth-child(3) { margin-left: clamp(2.5rem, 7vw, 5.5rem); }
+
+.js [data-reveal] { opacity: 1; filter: brightness(.74); transform: translateY(1.5rem); transition: filter .75s ease, transform .85s cubic-bezier(.2,.8,.2,1); transition-delay: var(--reveal-delay, 0ms); }
+.js [data-reveal].is-revealed { opacity: 1; filter: brightness(1); transform: translateY(0); }
+.projects { gap: clamp(3.5rem, 6vw, 5.5rem); }
+.project-item h3 { font-family: "Fraunces", Georgia, serif; font-size: clamp(1.45rem, 2.3vw, 2.1rem); line-height: 1.17; }
+.project-item .text-link { margin-top: 0; }
+.project-tags li { color: #e9d6ae; background: rgba(58,42,28,.84); border-color: rgba(200,121,44,.36); }
+.text-link { overflow: hidden; }
+.text-link::after { transition: transform .25s ease; }
+.text-link:hover::after, .text-link:focus-visible::after { transform: translate(.25rem,-.2rem); }
+.text-link.local:hover::after, .text-link.local:focus-visible::after { transform: translateX(.3rem); }
+
+.timeline::before { transform: translateY(-1px) scaleX(0); transform-origin: left; transition: transform 1.1s cubic-bezier(.2,.8,.2,1); }
+.timeline.is-revealed::before { transform: translateY(-1px) scaleX(1); }
+.timeline li { opacity: 1; filter: brightness(.72); transform: translateY(1.25rem); transition: filter .55s ease var(--timeline-delay,0ms), transform .65s cubic-bezier(.2,.8,.2,1) var(--timeline-delay,0ms); }
+.timeline li:nth-child(even) { transform: translateY(-1.25rem); }
+.timeline.is-revealed li { filter: brightness(1); transform: translateY(0); }
+.timeline li:nth-child(1) { --timeline-delay: 120ms; } .timeline li:nth-child(2) { --timeline-delay: 210ms; } .timeline li:nth-child(3) { --timeline-delay: 300ms; } .timeline li:nth-child(4) { --timeline-delay: 390ms; } .timeline li:nth-child(5) { --timeline-delay: 480ms; } .timeline li:nth-child(6) { --timeline-delay: 570ms; }
+
+/* Timeline — a brief flash of light passing across the date chevron row.
+   The band is exactly the height of the date row (3.5rem) with a light blur,
+   so it reads as a flash sweeping over the faces of the date blocks rather
+   than a glow halo wrapped around the timeline and its borders. */
+.timeline::after { content: ""; position: absolute; z-index: 4; top: 50%; left: -3rem; width: 6.5rem; height: 3.5rem; margin-top: -1.75rem; border-radius: 50%; pointer-events: none; opacity: 0; background: linear-gradient(100deg, rgba(233, 194, 103, 0) 0%, rgba(244, 217, 160, 0.27) 26%, rgba(255, 250, 230, 0.8) 50%, rgba(244, 217, 160, 0.27) 74%, rgba(233, 194, 103, 0) 100%); filter: blur(2px); mix-blend-mode: screen; transform: skewX(-14deg); animation: timelineLightPass 7.6s linear infinite; will-change: left, opacity; }
+@keyframes timelineLightPass {
+  0% { left: -3rem; opacity: 0; }
+  6% { left: calc((100% - 4rem) * 0.07); opacity: 1; }
+  58% { left: calc(100% - 4rem); opacity: 1; }
+  64% { left: calc(100% - 1rem); opacity: 0; }
+  100% { left: calc(100% - 1rem); opacity: 0; }
+}
+@media (max-width: 900px) {
+  .timeline::after { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .timeline::after { display: none !important; animation: none !important; }
+}
+
+.credential-groups { gap: 1.2rem; }
+.credential-group { border: 1px solid var(--line); border-top: 2px solid var(--accent); background: linear-gradient(150deg, rgba(58,42,28,.82), rgba(46,33,24,.92)); }
+.credential-item { position: relative; transition: color .25s ease, background .25s ease, transform .25s ease; }
+.credential-item:not(.has-logo) { padding-left: 1.25rem; }
+.credential-item:not(.has-logo)::before { content: ""; position: absolute; left: .15rem; top: 1.18rem; width: .42rem; height: .42rem; background: var(--accent); transform: rotate(45deg); transition: transform .3s ease, box-shadow .3s ease; }
+.credential-item:hover { color: var(--ink); background: rgba(200,121,44,.055); transform: translateX(.2rem); }
+.credential-item:not(.has-logo):hover::before { transform: translateX(.18rem) rotate(45deg); box-shadow: 0 0 .8rem rgba(200,121,44,.8); }
+/* Certification hover / focus — vivid golden-orange text */
+.credentials-section .credential-item, .credentials-section .credential-item a { transition: color 0.35s ease, background 0.25s ease, transform 0.25s ease; }
+.credentials-section .credential-item:hover, .credentials-section .credential-item:focus-within { color: #FF9E2C; }
+.credentials-section .credential-item a:hover, .credentials-section .credential-item a:focus-visible { color: #FF9E2C; }
+
+.contact-button { position: relative; will-change: transform; transition: transform .18s ease, color .3s ease, background .3s ease, border-color .3s ease, box-shadow .3s ease; border-radius: 999px; padding: .78rem 1.3rem; background: linear-gradient(135deg, #F4D9A0, #C8792C); box-shadow: 0 .65rem 1.6rem rgba(0,0,0,.2); }
+.contact-button.secondary { background: transparent; border-color: rgba(200,121,44,.75); box-shadow: none; }
+.contact-button:hover, .contact-button:focus-visible { box-shadow: 0 .9rem 2rem rgba(0,0,0,.28), 0 0 1.4rem rgba(200,121,44,.18); }
+.article-card-title { transition: color .28s ease; }
+.article-card:hover .article-card-title, .article-card:focus-visible .article-card-title { color: var(--accent-strong); }
+.site-footer { border-top: 1px solid rgba(200,121,44,.45); background: rgba(36,26,18,.72); }
+
+@media (max-width: 900px) {
+  .hero { min-height: auto; }
+  .side { flex: none; width: 100%; min-height: 27rem; padding: 4.25rem 1.5rem; overflow: visible; }
+  .side-inner { max-width: 36rem; }
+  .side::before { top: 18%; font-size: clamp(6rem, 25vw, 10rem); }
+}
+@media (max-width: 680px) {
+  .site-nav { gap: 1rem; }
+  .site-nav nav { gap: clamp(.55rem, 3vw, .9rem); }
+  .site-nav nav a { font-size: .76rem; }
+  .side .eyebrow { font-size: clamp(3rem, 16vw, 4.9rem); }
+  .project-feature-media, .project-feature-media img { border-radius: 1.25rem; }
+  .project-feature-copy h3 { font-size: clamp(1.45rem, 6vw, 1.75rem); }
+  .view-more-btn { margin-top: 1.4rem; }
+}
+@media (max-width: 900px) {
+  .timeline { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 1.25rem; min-height: auto; }
+  .timeline::before { display: none; }
+  .timeline li { height: 21rem; }
+}
+@media (max-width: 680px) {
+  .timeline { grid-template-columns: 1fr; gap: 1rem; margin-top: 0.75rem; }
+  .timeline li, .timeline li:nth-child(even) { display: grid; grid-template-columns: 1fr; grid-template-rows: auto auto; gap: 0.75rem; height: auto; transform: translateY(1rem); }
+  .timeline.is-revealed li, .timeline.is-revealed li:nth-child(even) { transform: translateY(0); }
+  .timeline-date, .timeline li:first-child .timeline-date { grid-row: 1; width: 100%; margin: 0; min-height: 3.35rem; padding: 0 1.3rem; clip-path: polygon(0 0, calc(100% - 1.05rem) 0, 100% 50%, calc(100% - 1.05rem) 100%, 0 100%); }
+  .timeline li:nth-child(odd) .timeline-info, .timeline li:nth-child(even) .timeline-info { grid-row: 2; align-self: auto; margin: 0; padding: 0.25rem 0.45rem 0.9rem; }
+  .timeline li:nth-child(odd) .timeline-info::after, .timeline li:nth-child(even) .timeline-info::before { display: none; }
+  .timeline-logo { flex-basis: 72px; width: 72px; height: 72px; }
+  .timeline-role { font-size: 0.94rem; }
+  .timeline-org { font-size: 0.8rem; }
+}
+@media (max-width: 430px) {
+  .site-nav { align-items: flex-start; }
+  .site-nav nav { flex-wrap: wrap; justify-content: flex-end; row-gap: 0; max-width: 16rem; }
+}
+@media (max-width: 1250px) and (min-width: 901px) {
+  .side-inner { max-width: 23rem; }
+  .portrait { height: 62%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+  .ambient-field { display: none; }
+  .js [data-reveal], .timeline li { opacity: 1 !important; transform: none !important; }
+  .project-feature-media { transform: none !important; }
+  .marquee-track { transform: translateX(0) !important; }
+  .hero-hint { animation: none !important; }
+}
+</style>
+</head>
+<body>
+<div class="ambient-field" aria-hidden="true">
+  <span class="ambient-blob one"></span>
+  <span class="ambient-blob two"></span>
+  <span class="ambient-blob three"></span>
+</div>
+<header class="site-nav">
+  <div class="brand-group">
+    <a class="brand" href="#top" aria-label="Back to top">NM</a>
+    <span class="header-name">NIKHIL VARDHAN MAROJU</span>
+  </div>
+  <nav aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#approach">Approach</a>
+    <a href="#about">About</a>
+    <a href="#credentials">Credentials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<main id="top">
+  <section class="hero" id="hero" aria-label="Introduction">
+    <div class="side side-left" id="sideLeft" tabindex="0" role="button" aria-pressed="false" aria-label="Business Analyst view. Activate to emphasize.">
+      <div class="side-inner">
+        <p class="eyebrow"><span>Business</span> <em>Analyst</em></p>
+        <p class="side-copy">“I turn data into decisions, connecting the numbers to the bigger picture so teams know exactly what to do next.”</p>
+        <ul class="side-tags"><li>Data Analysis</li><li>Problem Solving</li><li>Business Intelligence</li><li>Decision Support</li></ul>
+      </div>
+    </div>
+    <div class="side side-right" id="sideRight" tabindex="0" role="button" aria-pressed="false" aria-label="Marketing Strategist view. Activate to emphasize.">
+      <div class="side-inner">
+        <p class="eyebrow"><span>Marketing</span> <em>Strategist</em></p>
+        <p class="side-copy">“I turn audience insight into positioning people remember, campaigns people feel, and growth that lasts.”</p>
+        <ul class="side-tags"><li>Audience Research</li><li>Brand Positioning</li><li>Creative Strategy</li><li>Campaign Planning</li></ul>
+      </div>
+    </div>
+    <div class="portrait" id="heroPortrait" role="img" aria-label="Portrait of Nikhil Vardhan Maroju">
+      <img class="portrait-img portrait-img-left" src="assets/asset-01.png" alt="" width="1024" height="1024">
+      <img class="portrait-img portrait-img-right" src="assets/asset-02.png" alt="" width="500" height="500">
+    </div>
+    <p class="hero-hint" id="heroHint">Move your pointer across the hero to explore each side</p>
+  </section>
+
+  <div class="marquee" id="nameMarquee" aria-label="BUILDING GROWTH WITH INTENTION">
+    <div class="marquee-track" id="marqueeTrack">
+      <span class="marquee-chunk"><span class="marquee-word-pale">BUILDING</span> <span class="marquee-word-gold">GROWTH</span> <span class="marquee-word-pale">WITH</span> <span class="marquee-word-gold">INTENTION</span>&nbsp;</span>
+      <span class="marquee-chunk" aria-hidden="true"><span class="marquee-word-pale">BUILDING</span> <span class="marquee-word-gold">GROWTH</span> <span class="marquee-word-pale">WITH</span> <span class="marquee-word-gold">INTENTION</span>&nbsp;</span>
+      <span class="marquee-chunk" aria-hidden="true"><span class="marquee-word-pale">BUILDING</span> <span class="marquee-word-gold">GROWTH</span> <span class="marquee-word-pale">WITH</span> <span class="marquee-word-gold">INTENTION</span>&nbsp;</span>
+      <span class="marquee-chunk" aria-hidden="true"><span class="marquee-word-pale">BUILDING</span> <span class="marquee-word-gold">GROWTH</span> <span class="marquee-word-pale">WITH</span> <span class="marquee-word-gold">INTENTION</span>&nbsp;</span>
+      <span class="marquee-chunk" aria-hidden="true"><span class="marquee-word-pale">BUILDING</span> <span class="marquee-word-gold">GROWTH</span> <span class="marquee-word-pale">WITH</span> <span class="marquee-word-gold">INTENTION</span>&nbsp;</span>
+      <span class="marquee-chunk" aria-hidden="true"><span class="marquee-word-pale">BUILDING</span> <span class="marquee-word-gold">GROWTH</span> <span class="marquee-word-pale">WITH</span> <span class="marquee-word-gold">INTENTION</span>&nbsp;</span>
+      <span class="marquee-chunk" aria-hidden="true"><span class="marquee-word-pale">BUILDING</span> <span class="marquee-word-gold">GROWTH</span> <span class="marquee-word-pale">WITH</span> <span class="marquee-word-gold">INTENTION</span>&nbsp;</span>
+      <span class="marquee-chunk" aria-hidden="true"><span class="marquee-word-pale">BUILDING</span> <span class="marquee-word-gold">GROWTH</span> <span class="marquee-word-pale">WITH</span> <span class="marquee-word-gold">INTENTION</span>&nbsp;</span>
+    </div>
+    <button class="marquee-toggle" id="marqueePause" type="button" aria-pressed="false" aria-label="Pause scrolling"><svg class="icon-pause" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><rect x="2.5" y="2" width="4" height="12" rx="1"></rect><rect x="9.5" y="2" width="4" height="12" rx="1"></rect></svg><svg class="icon-play" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4.5 2.2c0-.9 1-1.5 1.8-1L13.2 7c.8.5.8 1.5 0 2l-6.9 5.8c-.8.6-1.8 0-1.8-.9V2.2z"></path></svg></button>
+  </div>
+
+  <section class="story-section" id="story" aria-labelledby="story-title">
+    <div class="story-clip" aria-hidden="true"><span class="story-watermark">Story</span></div>
+    <div class="story-grid">
+      <div class="story-left">
+        <span class="story-rule" aria-hidden="true"></span>
+        <h2 class="story-title" id="story-title">My Story</h2>
+        <p class="story-subtitle">(Keeping it Simple)</p>
+      </div>
+      <div class="story-flow">
+        <div class="story-chapter story-lede-wrap">
+          <span class="story-chapter-num" aria-hidden="true">01</span>
+          <p class="story-lede">I’m Nikhil Vardhan, a marketing and business analytics professional with a strategist’s mindset. I use data to <span class="hl" style="--d:.05s">understand performance</span>, <span class="hl" style="--d:.25s">uncover customer patterns</span>, and turn complex questions into <span class="hl" style="--d:.45s">practical recommendations</span>.</p>
+        </div>
+        <div class="story-beat story-chapter">
+          <span class="story-chapter-num" aria-hidden="true">02</span>
+          <span class="story-diamond" aria-hidden="true"></span>
+          <p>My experience spans campaign analysis across search, social, and programmatic platforms, alongside projects in customer sentiment and churn analysis. I connect marketing performance with broader business questions: <span class="hl" style="--d:.05s">what influences customer decisions</span>, <span class="hl" style="--d:.25s">where resources can work harder</span>, and <span class="hl" style="--d:.45s">which opportunities deserve attention</span>.</p>
+        </div>
+        <div class="story-beat story-chapter">
+          <span class="story-chapter-num" aria-hidden="true">03</span>
+          <span class="story-diamond" aria-hidden="true"></span>
+          <p>I work with dashboards, customer data, and performance reports to explain what is happening and why it matters. My focus goes beyond reporting numbers to helping teams <span class="hl" style="--d:.05s">evaluate options</span>, <span class="hl" style="--d:.25s">improve processes</span>, and <span class="hl" style="--d:.45s">make informed decisions</span>.</p>
+        </div>
+        <div class="story-beat story-chapter">
+          <span class="story-chapter-num" aria-hidden="true">04</span>
+          <span class="story-diamond" aria-hidden="true"></span>
+          <p>I also bring an understanding of messaging, design, and storytelling. That perspective helps me <span class="hl" style="--d:.05s">communicate findings clearly</span> and connect analytical recommendations to <span class="hl" style="--d:.25s">customer needs and business goals</span>.</p>
+        </div>
+        <p class="story-close">Do I seem like an interesting guy....... <a class="story-talk" href="#contact">let&rsquo;s talk!!!<span class="story-arrow" aria-hidden="true">&rarr;</span></a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" id="approach">
+    <div class="section-head">
+      <div><h2>What makes me different</h2><p class="eyebrow">How I Approach Business Analysis</p></div>
+      <p class="section-lede analyst-caption">A brand&rsquo;s workflow, seen through a business analyst&rsquo;s lens: from the business question, through the data, to a decision worth making.</p>
+    </div>
+    <figure class="branch-map">
+      <button class="branch-map-link" type="button" data-framework-trigger data-lightbox-label="Business Analyst framework diagram" aria-haspopup="dialog" aria-label="Open enlarged Business Analyst framework diagram">
+        <img src="assets/asset-03.png" width="3840" height="2160" alt="Mind map centered on &lsquo;Business Decision&rsquo; showing the six branches of my business analysis approach: 1. Frame the Business Question, 2. Establish trustworthy data, 3. Explore customer differences, 4. Test and interpret patterns, 5. Build a business recommendation, and 6. Plan validation and follow-up, each with its supporting steps.">
+      </button>
+      <figcaption class="branch-map-hint">Click to expand</figcaption>
+    </figure>
+    <div class="section-head branch-map-head">
+      <div><p class="eyebrow">How I Approach Marketing Strategy</p></div>
+      <p class="section-lede strategist-caption">A brand&rsquo;s presence, seen through a marketing strategist&rsquo;s lens: from the audience, through the channels, to a brand worth remembering.</p>
+    </div>
+    <figure class="branch-map">
+      <button class="branch-map-link" type="button" data-framework-trigger data-lightbox-label="Marketing Strategist framework diagram" aria-haspopup="dialog" aria-label="Open enlarged Marketing Strategist framework diagram">
+        <img src="assets/asset-04.png" width="2646" height="1484" alt="Mind map centered on &lsquo;BRAND&rsquo; showing the seven channel branches of my marketing strategy approach: SEO/Organic Google, E-mail Automation, Thought Leadership and Partnerships, Organic Social Media, Paid Search Ads, Paid Social Ads, and Content Syndication Ads, each with its supporting tactics.">
+      </button>
+      <figcaption class="branch-map-hint">Click to expand</figcaption>
+    </figure>
+  </section>
+
+  <section class="content-section" id="work">
+    <div class="section-head">
+      <div><p class="eyebrow">Selected work</p><h2>Projects</h2></div>
+      <p class="section-lede projects-lede">A mix of marketing execution and analytics: campaigns measured, customers understood, churn predicted.</p>
+    </div>
+    <div class="projects">
+      <article class="project-feature project-feature--beats">
+        <a class="project-feature-media" href="https://nikhilvardhan-maroju.my.canva.site/page-2" target="_blank" rel="noopener noreferrer" aria-label="Open the Beats by Dre Data Analytics Externship case study">
+          <img src="assets/asset-05.png" width="836" height="471" alt="Beats Customer Review and Sentiment Analysis cover graphic showing black Beats earbuds in their open charging case, with 63.9 percent positive sentiment from Amazon reviews">
+        </a>
+        <div class="project-feature-copy">
+          <h3><a href="https://nikhilvardhan-maroju.my.canva.site/page-2" target="_blank" rel="noopener noreferrer">Beats Customer Sentiment &amp; Competitive Insights</a></h3>
+          <p>This project analyzed Amazon customer reviews for Beats by Dre to understand customer sentiment, product strengths, and competitive positioning. Using Python, EDA, and sentiment analysis, the project identified strong appeal in sound quality, bass, design, and brand image, while uncovering pain points around connectivity, battery consistency, and reliability. The final recommendation was to refine the core product experience before expanding the product line, helping protect Beats&rsquo; premium positioning and improve future marketing strategy.</p>
+          <a class="view-more-btn" href="https://nikhilvardhan-maroju.my.canva.site/page-2" target="_blank" rel="noopener noreferrer">View More <span class="view-more-arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="project-feature project-feature--rebalanced">
+        <a class="project-feature-media" href="https://nikhilvardhan-maroju.my.canva.site/page-4" target="_blank" rel="noopener noreferrer" aria-label="Open the Telecom Customer Churn Analysis case study">
+          <img src="assets/asset-06.png" width="836" height="471" alt="Telecom Customer Churn Analysis cover graphic showing a laptop with a churn dashboard of customer, retention, and churn-driver charts, beside a headset and phone on a desk">
+        </a>
+        <div class="project-feature-copy">
+          <h3><a href="https://nikhilvardhan-maroju.my.canva.site/page-4" target="_blank" rel="noopener noreferrer">Telecom Customer Churn Analysis</a></h3>
+          <p>Using the IBM Telco Customer Churn dataset, I analyzed customer behavior, service usage, billing patterns, contracts, churn scores, and customer lifetime value to identify key churn drivers. The project produced a predictive retention framework that segmented customers into high-, medium-, and low-risk groups to help prioritize retention efforts and reduce revenue loss.</p>
+          <a class="view-more-btn" href="https://nikhilvardhan-maroju.my.canva.site/page-4" target="_blank" rel="noopener noreferrer">View More <span class="view-more-arrow" aria-hidden="true">&rarr;</span></a>
+          <a class="view-more-btn" style="margin-left: 0.75rem;" href="https://drive.google.com/file/d/1UA7ytHVz8KCV5eloMtSel1HdS54pM07i/view" target="_blank" rel="noopener noreferrer">View File <span class="view-more-arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="project-feature project-feature--rebalanced">
+        <a class="project-feature-media" href="https://drive.google.com/drive/folders/1SO5yJs7qFssqu9lPvTNyw6mIgq87C5vM" target="_blank" rel="noopener noreferrer" aria-label="Open the Paid Media Campaign Performance Report case study">
+          <img src="assets/asset-07.png" width="836" height="471" alt="Digital Marketing post campaign report cover for Hyderabad from the Raj Soin College of Business at Wright State University, showing the college building at dusk">
+        </a>
+        <div class="project-feature-copy">
+          <h3><a href="https://drive.google.com/drive/folders/1SO5yJs7qFssqu9lPvTNyw6mIgq87C5vM" target="_blank" rel="noopener noreferrer">Paid Media Campaign Performance Report</a></h3>
+          <p>This project analyzed an 8-week digital campaign promoting Wright State's MS in Marketing Analytics &amp; Insights to prospective students in Hyderabad across Google Search, Display and Video, Facebook, Instagram, LinkedIn, and Quora. A/B tests, bidding changes, keyword refinement, and creative fixes improved campaign efficiency. The campaign delivered 153.2K Google Ads impressions, 8.7K clicks, and 447 conversions, with Search and Display driving key results. The analysis shows how budget, targeting, and creative decisions can strengthen international student recruitment.</p>
+          <a class="view-more-btn" href="https://drive.google.com/drive/folders/1SO5yJs7qFssqu9lPvTNyw6mIgq87C5vM" target="_blank" rel="noopener noreferrer">View More <span class="view-more-arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="project-feature project-feature--rebalanced">
+        <a class="project-feature-media" href="https://public.tableau.com/app/profile/nikhil.vardhan.maroju/viz/BritishAirwaysReview_17821727036290/Dashboard1" target="_blank" rel="noopener noreferrer" aria-label="Open the British Airways Review Intelligence Dashboard case study">
+          <img src="assets/asset-08.png" width="836" height="471" alt="British Airways Review Dashboard graphic showing a British Airways airplane over a world map with customer review charts, including an overall rating, rating distribution, top categories, and reviews over time">
+        </a>
+        <div class="project-feature-copy">
+          <h3><a href="https://public.tableau.com/app/profile/nikhil.vardhan.maroju/viz/BritishAirwaysReview_17821727036290/Dashboard1" target="_blank" rel="noopener noreferrer">British Airways Review Intelligence Dashboard</a></h3>
+          <p>I built this Tableau dashboard to analyze British Airways customer reviews and turn passenger feedback into clear business insights. The challenge was that review data alone does not immediately show where customer experience is strong or weak, so I organized the data around key satisfaction metrics such as overall rating, cabin staff service, food and beverages, entertainment, seat comfort, aircraft type, country, and review timeline. I used Tableau to create an interactive dashboard with filters, maps, trend views, and rating comparisons so users could explore customer sentiment from multiple angles. The final dashboard helped reveal patterns in passenger satisfaction, identify service areas that may need improvement, and present customer feedback in a way that airline decision-makers could quickly understand and act on.</p>
+          <a class="view-more-btn" href="https://public.tableau.com/app/profile/nikhil.vardhan.maroju/viz/BritishAirwaysReview_17821727036290/Dashboard1" target="_blank" rel="noopener noreferrer">View More <span class="view-more-arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="project-feature project-feature--rebalanced">
+        <a class="project-feature-media" href="https://drive.google.com/drive/folders/19fGJb0CtE_jBp3EvvaVH14Vp9UKOkYfo" target="_blank" rel="noopener noreferrer" aria-label="Open the OTT Customer Churn Analysis Project Overview case study">
+          <img src="assets/asset-09.png" width="836" height="471" alt="OTT Customer Churn Analysis cover graphic in gold, subtitled Customer Retention, Revenue Risk and Support Intelligence, with icons for customer retention, revenue risk, churn insights, and support intelligence beside a rising chart">
+        </a>
+        <div class="project-feature-copy">
+          <h3><a href="https://drive.google.com/drive/folders/19fGJb0CtE_jBp3EvvaVH14Vp9UKOkYfo" target="_blank" rel="noopener noreferrer">OTT Customer Churn Analysis Project Overview</a></h3>
+          <p>Developed an OTT customer churn analysis project to identify why subscribers leave and where retention efforts should be focused. Combined customer, subscription, and support data from relational SQLite tables using SQL and Python. Used Pandas and NumPy to clean the data, engineer churn indicators, calculate KPIs, and segment customers by risk level. Evaluated churn patterns across plan type, contract type, geography, time, revenue exposure, and support escalations. Translated the findings into retention recommendations based on churn risk, customer lifetime value, and support severity.</p>
+          <a class="view-more-btn" href="https://drive.google.com/drive/folders/19fGJb0CtE_jBp3EvvaVH14Vp9UKOkYfo" target="_blank" rel="noopener noreferrer">View More <span class="view-more-arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="content-section" id="about">
+    <div class="section-head">
+      <div><p class="eyebrow">About</p><h2 class="about-roles"><span>Analyst</span><span>Marketer</span><span>Storyteller</span></h2></div>
+    </div>
+    <div class="about-grid">
+      <figure class="about-photo">
+        <img src="assets/asset-10.png" alt="Nikhil Vardhan Maroju in graduation cap and gown">
+      </figure>
+      <div class="about-copy">
+        <p>I help businesses grow by turning data into decisions: blending storytelling with strategy, and shaping insights into actions that drive results.</p>
+        <p>I hold an M.S. in Marketing Analytics and Insights from Wright State University. My work lives where measurement meets meaning. I believe in asking the right questions and being data-driven, yet deeply human. Behind every dashboard is a decision, and behind every number is a person.</p>
+      </div>
+      <ol class="timeline" aria-label="Experience timeline">
+        <li>
+          <div class="timeline-info"><a class="timeline-logo" href="https://www.linkedin.com/company/robokalam/about/" target="_blank" rel="noopener noreferrer" aria-label="Robokalam on LinkedIn (opens in a new tab)"><img src="assets/asset-11.png" alt="Robokalam logo"></a><span class="timeline-copy"><span class="timeline-role">Marketing Analyst</span><span class="timeline-org">Robokalam</span></span></div>
+          <span class="timeline-date"><time>2020–2021</time></span>
+        </li>
+        <li>
+          <div class="timeline-info"><a class="timeline-logo" href="https://www.linkedin.com/company/digital-deepak/about/" target="_blank" rel="noopener noreferrer" aria-label="Digital Deepak on LinkedIn (opens in a new tab)"><img src="assets/asset-12.png" alt="Digital Deepak logo"></a><span class="timeline-copy"><span class="timeline-role">Digital Marketing Intern</span><span class="timeline-org">Digital Deepak</span></span></div>
+          <span class="timeline-date"><time>2020–2021</time></span>
+        </li>
+        <li>
+          <div class="timeline-info"><a class="timeline-logo" href="https://www.linkedin.com/company/multiplierai/about/" target="_blank" rel="noopener noreferrer" aria-label="Multiplier AI on LinkedIn (opens in a new tab)"><img src="assets/asset-13.jpg" alt="Multiplier AI logo"></a><span class="timeline-copy"><span class="timeline-role">Digital Marketing Analyst</span><span class="timeline-org">Multiplier AI</span></span></div>
+          <span class="timeline-date"><time>2022–2024</time></span>
+        </li>
+        <li>
+          <div class="timeline-info"><a class="timeline-logo" href="https://www.linkedin.com/school/wright-state-university/about/" target="_blank" rel="noopener noreferrer" aria-label="Wright State University on LinkedIn (opens in a new tab)"><img src="assets/asset-14.jpg" alt="Wright State University logo"></a><span class="timeline-copy"><span class="timeline-role">Marketing Coordinator</span><span class="timeline-org">Wright State University (Part-time)</span></span></div>
+          <span class="timeline-date"><time>2024–2026</time></span>
+        </li>
+        <li>
+          <div class="timeline-info"><a class="timeline-logo" href="https://www.linkedin.com/company/plusfan/about/" target="_blank" rel="noopener noreferrer" aria-label="Plus.Fan on LinkedIn (opens in a new tab)"><img src="assets/asset-15.jpg" alt="Shield with star logo"></a><span class="timeline-copy"><span class="timeline-role">Business Development Intern</span><span class="timeline-org">Plus.Fan</span></span></div>
+          <span class="timeline-date"><time>2025</time></span>
+        </li>
+        <li>
+          <div class="timeline-info"><a class="timeline-logo" href="https://www.linkedin.com/company/buckeye-innovation/" target="_blank" rel="noopener noreferrer" aria-label="Buckeye Innovation on LinkedIn (opens in a new tab)"><img src="assets/asset-16.jpg" alt="Red circle logo"></a><span class="timeline-copy"><span class="timeline-role">Marketing Creative Strategy Intern</span><span class="timeline-org">Buckeye Innovation</span></span></div>
+          <span class="timeline-date"><time>2026</time></span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="credentials-section" id="credentials" aria-labelledby="credentials-title">
+    <div class="section-head">
+      <div><p class="eyebrow">Achievements</p><h2 id="credentials-title">Credentials</h2></div>
+      <p class="section-lede">Training across analytics, media platforms, campaign execution, and creative production.</p>
+    </div>
+    <div class="credential-groups">
+      <section class="credential-group"><h3>Professional certifications</h3><div class="credential-list">
+        <p class="credential-item has-logo"><a href="https://www.credly.com/badges/408afcca-0320-43fc-a925-006fb2e258b4/linked_in_profile" target="_blank" rel="noopener noreferrer"><span class="credential-logo"><img src="assets/asset-17.png" alt="" aria-hidden="true"></span><span>Meta Certified Business / Marketing Strategist</span></a></p>
+        <p class="credential-item has-logo"><a href="https://skillshop.credential.net/profile/nikhilvardhan19480/wallet" target="_blank" rel="noopener noreferrer"><span class="credential-logo"><img src="assets/asset-18.png" alt="" aria-hidden="true"></span><span>Google Analytics Certification</span></a></p>
+        <p class="credential-item has-logo"><a href="https://skillshop.credential.net/profile/nikhilvardhan19480/wallet" target="_blank" rel="noopener noreferrer"><span class="credential-logo"><img src="assets/asset-19.png" alt="" aria-hidden="true"></span><span>Google Search Ads 360 Certification</span></a></p>
+        <p class="credential-item has-logo"><a href="https://drive.google.com/file/d/13JecwqG7uOxpPNwPjqdWapMkkbbHfw2K/view" target="_blank" rel="noopener noreferrer"><span class="credential-logo"><img src="assets/asset-20.png" alt="" aria-hidden="true"></span><span>Amazon Ads and DSP Advanced Certification</span></a></p>
+        <p class="credential-item has-logo"><a href="https://skillshop.credential.net/profile/nikhilvardhan19480/wallet" target="_blank" rel="noopener noreferrer"><span class="credential-logo"><img src="assets/asset-19.png" alt="" aria-hidden="true"></span><span>Display and Video Ads 360 Certification</span></a></p>
+        <p class="credential-item has-logo"><a href="https://app-na2.hubspot.com/academy/achievements/09nnr6k0/en/1/nikhil-vardhan-maroju/email-marketing-software" target="_blank" rel="noopener noreferrer"><span class="credential-logo"><img src="assets/asset-21.webp" alt="" aria-hidden="true"></span><span>Email Marketing Software Certified (HubSpot)</span></a></p>
+      </div></section>
+      <section class="credential-group"><h3>Courses and training</h3><div class="credential-list">
+        <p class="credential-item has-logo"><a href="https://www.linkedin.com/learning/certificates/6c2837b6ef5cb10a3df951e475cb3138c04f6d98aedcd4eb3f461552a1f5b528?trk=share_certificate" target="_blank" rel="noopener noreferrer"><span class="credential-logo"><img src="assets/asset-22.png" alt="" aria-hidden="true"></span><span>Adobe Premiere Pro 2024 Professional Certificate</span></a></p>
+        <p class="credential-item has-logo"><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_kqxboDWzrJZDnLZna_1742086793358_completion_certificate.pdf" target="_blank" rel="noopener noreferrer"><span class="credential-logo"><img src="assets/asset-23.png" alt="" aria-hidden="true"></span><span>Data Analytics Job Simulation (Forage)</span></a></p>
+        <p class="credential-item has-logo"><a href="https://www.linkedin.com/learning/certificates/0de402030752c18c3741d12613c620814fdbd76de2ef12204de01f2a36bb18dc" target="_blank" rel="noopener noreferrer"><span class="credential-logo"><img src="assets/asset-24.png" alt="" aria-hidden="true"></span><span>Power BI for Data Analyst (LinkedIn Learning)</span></a></p>
+      </div></section>
+      <section class="credential-group"><h3>Externship recognition</h3><div class="credential-list">
+        <p class="credential-item has-logo"><a href="https://nikhilvardhan-maroju.my.canva.site/page-3" target="_blank" rel="noopener noreferrer"><span class="credential-logo"><img src="assets/asset-25.png" alt="" aria-hidden="true"></span><span>Beats by Dre Data Analytics Externship, Certificate of Completion (January 2026)</span></a></p>
+      </div></section>
+    </div>
+  </section>
+
+  <section class="industries-section" id="industries" aria-labelledby="industries-title">
+    <div class="industries-head">
+      <h2 class="industries-title" id="industries-title">Industries I&rsquo;ve <span>Worked In</span></h2>
+    </div>
+    <ul class="industries-grid">
+      <li class="industry-item" tabindex="0"><span class="industry-name">EdTech</span></li>
+      <li class="industry-item" tabindex="0"><span class="industry-name">Marketing Agencies</span></li>
+      <li class="industry-item" tabindex="0"><span class="industry-name">Software &amp; AI</span></li>
+      <li class="industry-item" tabindex="0"><span class="industry-name">E-commerce</span></li>
+      <li class="industry-item" tabindex="0"><span class="industry-name">Research Services</span></li>
+      <li class="industry-item" tabindex="0"><span class="industry-name">Nonprofit Organization</span></li>
+      <li class="industry-item" tabindex="0"><span class="industry-name">Business Consulting</span></li>
+      <li class="industry-item" tabindex="0"><span class="industry-name">SaaS</span></li>
+      <li class="industry-item" tabindex="0"><span class="industry-name">Campus Promotions</span></li>
+      <li class="industry-item" tabindex="0"><span class="industry-name">Sports &amp; Entertainment</span></li>
+      <li class="industry-item" tabindex="0"><span class="industry-name">Real Estate &amp; Property</span></li>
+      <li class="industry-item" tabindex="0"><span class="industry-name">Retail Development</span></li>
+    </ul>
+  </section>
+
+  <section class="content-section" id="contact">
+    <div class="section-head">
+      <div><p class="eyebrow">Contact</p><h2 class="contact-title"><span>Great ideas grow</span><span>when shared</span></h2></div>
+      <p class="section-lede contact-lede">Whether you are shaping a brand, expanding a campaign, or simply brainstorming, I am here to listen and exchange thoughts.</p>
+    </div>
+    <div class="contact-layout">
+      <div class="contact-actions">
+        <a class="contact-button" href="mailto:nikhilvardhan004@gmail.com">Email me</a>
+        <a class="contact-button secondary" href="https://www.linkedin.com/in/nikhilvardhanmaroju/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <section class="writing">
+        <div class="article-grid">
+          <a class="article-card" href="https://www.linkedin.com/pulse/14-linkedin-engagement-hacks-i-learned-student-actually-maroju-2jlmc/" target="_blank" rel="noopener noreferrer" aria-label="Read on LinkedIn: 14 LinkedIn Engagement Hacks I Learned as a Student (That Actually Work)">
+            <span class="article-card-media"><img src="assets/asset-26.png" alt="Banner artwork for the article 14 LinkedIn Engagement Hacks I Learned as a Student" width="1279" height="720"></span>
+            <span class="article-card-body">
+              <span class="article-card-title">14 LinkedIn Engagement Hacks I Learned as a Student (That Actually Work)</span>
+              <span class="article-card-text">When I started my Master's in Marketing &amp; Business Analytics, I wanted more than just classroom theory. I wanted to put concepts into practice.</span>
+              <span class="article-card-footer"><span class="article-card-source" aria-hidden="true">in</span>LinkedInEditors / May 18</span>
+            </span>
+          </a>
+          <a class="article-card" href="https://www.linkedin.com/pulse/web-analytics-beyond-traffic-kpis-actually-matter-2025-maroju-xiykc/" target="_blank" rel="noopener noreferrer" aria-label="Read on LinkedIn: Web Analytics Beyond Traffic: The KPIs That Actually Matter in 2025">
+            <span class="article-card-media"><img src="assets/asset-27.png" alt="Banner artwork for the article Web Analytics Beyond Traffic: The KPIs That Actually Matter in 2025" width="1279" height="720"></span>
+            <span class="article-card-body">
+              <span class="article-card-title">Web Analytics Beyond Traffic: The KPIs That Actually Matter in 2025</span>
+              <span class="article-card-text">Beyond Traffic – What Really Moves the Needle We all love to celebrate a spike in traffic. It feels like success: more eyes, more visits, more potential.</span>
+              <span class="article-card-footer"><span class="article-card-source" aria-hidden="true">in</span>LinkedInEditors / May 17</span>
+            </span>
+          </a>
+          <a class="article-card" href="https://www.linkedin.com/pulse/97-nobody-talks-why-modern-marketing-shifting-from-campaigns-maroju-4f9uc/" target="_blank" rel="noopener noreferrer" aria-label="Read on LinkedIn: The 97% Nobody Talks About: Why Modern Marketing Is Shifting From Campaigns to Signals">
+            <span class="article-card-media"><img src="assets/asset-28.png" alt="Banner artwork for the article The 97% Nobody Talks About: Why Modern Marketing Is Shifting From Campaigns to Signals" width="1279" height="720"></span>
+            <span class="article-card-body">
+              <span class="article-card-title">The 97% Nobody Talks About: Why Modern Marketing Is Shifting From Campaigns to Signals</span>
+              <span class="article-card-text">The Problem Isn't Traffic. It's What Happens After.</span>
+              <span class="article-card-footer"><span class="article-card-source" aria-hidden="true">in</span>LinkedInEditors / May 21</span>
+            </span>
+          </a>
+          <a class="article-card" href="https://www.linkedin.com/pulse/just-seo-anymore-5-optimizations-every-marketer-should-maroju-c4b0f/" target="_blank" rel="noopener noreferrer" aria-label="Read on LinkedIn: Not Just SEO Anymore: 5 Optimizations Every Marketer Should Know.">
+            <span class="article-card-media"><img src="assets/asset-29.png" alt="Banner artwork for the article Not Just SEO Anymore: 5 Optimizations Every Marketer Should Know" width="1279" height="720"></span>
+            <span class="article-card-body">
+              <span class="article-card-title">Not Just SEO Anymore: 5 Optimizations Every Marketer Should Know.</span>
+              <span class="article-card-text">Have you noticed how marketing keeps inventing new acronyms? First it was SEO, then came AEO, now we've got GEO, AIO, and SXO. At this point, it almost feels like marketers are competing with universities for who can come up with the most...</span>
+              <span class="article-card-footer"><span class="article-card-source" aria-hidden="true">in</span>LinkedInEditors / May 18</span>
+            </span>
+          </a>
+        </div>
+      </section>
+      <div class="blog-block">
+        <a class="blog-block-logo-link" href="https://technickmarketing.com" target="_blank" rel="noopener noreferrer" aria-label="Visit technickmarketing.com, my blog (opens in a new tab)">
+          <span class="blog-block-logo-shape"><img src="assets/asset-30.png" alt="TechNick Marketing logo" width="252" height="250"></span>
+        </a>
+        <div class="blog-block-copy">
+          <span class="blog-block-eyebrow">My blog</span>
+          <h3 class="blog-block-title">Check out my blogs</h3>
+          <p class="blog-block-text">I write about marketing, analytics, AI, and search on my own website, <strong>technickmarketing.com</strong>. Check out this website to read the latest articles.</p>
+        </div>
+        <a class="blog-block-cta" href="https://technickmarketing.com" target="_blank" rel="noopener noreferrer">Visit technickmarketing.com <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><p>&copy; 2026 Nikhil Vardhan Maroju. Built as a work in progress.</p></footer>
+<div class="framework-lightbox" id="frameworkLightbox" hidden role="dialog" aria-modal="true" aria-label="Enlarged framework diagram">
+  <button class="framework-lightbox-close" id="frameworkLightboxClose" type="button" aria-label="Close enlarged image">&times;</button>
+  <div class="framework-lightbox-scroll" id="frameworkLightboxScroll">
+    <img class="framework-lightbox-img" id="frameworkLightboxImg" alt="">
+  </div>
+</div>
+<script>
+(function () {
+  "use strict";
+  document.documentElement.classList.add("js");
+  var hero = document.getElementById("hero");
+  var left = document.getElementById("sideLeft");
+  var right = document.getElementById("sideRight");
+  var hint = document.getElementById("heroHint");
+  var portrait = document.getElementById("heroPortrait");
+  var FINE_POINTER = window.matchMedia("(pointer: fine)").matches;
+  var WIDE = window.matchMedia("(min-width: 901px)").matches;
+  var REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var pos = 0.5, target = 0.5, rafId = null, locked = null, interacted = false;
+  function clamp(v, lo, hi) { return Math.min(hi, Math.max(lo, v)); }
+  function dismissHint() {
+    if (!interacted && hint) { interacted = true; hint.classList.add("is-dismissed"); }
+  }
+  function apply() {
+    var split = 1 - pos;
+    hero.style.setProperty("--split", split.toFixed(4));
+    hero.style.setProperty("--split-shift-left", ((split - 0.5) * 90).toFixed(1) + "px");
+    hero.style.setProperty("--split-shift-right", ((split - 0.5) * -90).toFixed(1) + "px");
+    left.style.flexGrow = split.toFixed(4);
+    right.style.flexGrow = pos.toFixed(4);
+    var active = null;
+    if (pos < 0.44) active = "left"; else if (pos > 0.56) active = "right";
+    if (portrait) portrait.classList.toggle("show-right", active === "right");
+    left.classList.toggle("active", active === "left");
+    right.classList.toggle("active", active === "right");
+    left.setAttribute("aria-pressed", active === "left" ? "true" : "false");
+    right.setAttribute("aria-pressed", active === "right" ? "true" : "false");
+  }
+  function tick() {
+    pos += (target - pos) / 8;
+    if (Math.abs(target - pos) < 0.0005) { pos = target; apply(); rafId = null; return; }
+    apply();
+    rafId = requestAnimationFrame(tick);
+  }
+  function moveTo(t) {
+    target = clamp(t, 0.28, 0.72);
+    if (rafId === null && !REDUCED) rafId = requestAnimationFrame(tick);
+    if (REDUCED) { pos = target; apply(); }
+  }
+  var HOVER_CAPABLE = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  if (HOVER_CAPABLE && FINE_POINTER) {
+    function hoverActivate(side, e) {
+      if (e && e.pointerType === "touch") return;
+      if (!window.matchMedia("(min-width: 901px)").matches) return;
+      dismissHint();
+      locked = null;
+      moveTo(side === "left" ? 0.3 : 0.7);
+    }
+    left.addEventListener("pointerenter", function (e) { hoverActivate("left", e); });
+    right.addEventListener("pointerenter", function (e) { hoverActivate("right", e); });
+    left.addEventListener("mouseenter", function () { hoverActivate("left", null); });
+    right.addEventListener("mouseenter", function () { hoverActivate("right", null); });
+    hero.addEventListener("pointerleave", function () { locked = null; moveTo(0.5); });
+    hero.addEventListener("mouseleave", function () { locked = null; moveTo(0.5); });
+  } else if (hint) { hint.textContent = "Tap a side to explore it"; }
+  function toggle(side) {
+    dismissHint();
+    if (locked === side) { locked = null; moveTo(0.5); }
+    else { locked = side; moveTo(side === "left" ? 0.3 : 0.7); }
+  }
+  [[left, "left"], [right, "right"]].forEach(function (pair) {
+    var el = pair[0], side = pair[1];
+    el.addEventListener("click", function () {
+      if (window.matchMedia("(hover: hover) and (pointer: fine)").matches && window.matchMedia("(min-width: 901px)").matches) return;
+      toggle(side);
+    });
+    el.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(side); }
+      else if (e.key === "Escape" && locked) { locked = null; moveTo(0.5); }
+    });
+  });
+  window.matchMedia("(min-width: 901px)").addEventListener("change", function () {
+    locked = null; pos = 0.5; target = 0.5; apply();
+  });
+  apply();
+
+  var marquee = document.getElementById("nameMarquee");
+  var marqueePause = document.getElementById("marqueePause");
+  marqueePause.addEventListener("click", function () {
+    var paused = marquee.classList.toggle("is-paused");
+    marqueePause.setAttribute("aria-pressed", paused ? "true" : "false");
+    marqueePause.setAttribute("aria-label", paused ? "Resume scrolling" : "Pause scrolling");
+  });
+
+  var revealGroups = [
+    { selector: ".section-head", base: 0 },
+    { selector: ".story-flow > *", base: 110 },
+    { selector: ".project-feature, .project-item", base: 70 },
+    { selector: ".about-photo", base: 0 },
+    { selector: ".about-copy", base: 80 },
+    { selector: ".timeline", base: 120 },
+    { selector: ".credential-group", base: 85 },
+    { selector: ".industries-head", base: 0 },
+    { selector: ".industry-item", base: 55 },
+    { selector: ".contact-actions", base: 0 },
+    { selector: ".writing", base: 110 }
+  ];
+  var revealItems = [];
+  revealGroups.forEach(function (group) {
+    Array.prototype.forEach.call(document.querySelectorAll(group.selector), function (el, index) {
+      el.setAttribute("data-reveal", "");
+      el.style.setProperty("--reveal-delay", (group.base * index) + "ms");
+      revealItems.push(el);
+    });
+  });
+  if (REDUCED || !("IntersectionObserver" in window)) {
+    revealItems.forEach(function (el) { el.classList.add("is-revealed"); });
+  } else {
+    var revealObserver = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-revealed");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14, rootMargin: "0px 0px -7% 0px" });
+    revealItems.forEach(function (el) { revealObserver.observe(el); });
+  }
+
+  if (FINE_POINTER && !REDUCED) {
+    Array.prototype.forEach.call(document.querySelectorAll(".contact-button, .story-talk"), function (button) {
+      button.addEventListener("pointermove", function (e) {
+        var rect = button.getBoundingClientRect();
+        var dx = (e.clientX - rect.left - rect.width / 2) * 0.12;
+        var dy = (e.clientY - rect.top - rect.height / 2) * 0.18;
+        button.style.transform = "translate(" + dx.toFixed(1) + "px," + dy.toFixed(1) + "px)";
+      });
+      button.addEventListener("pointerleave", function () { button.style.transform = "translate(0,0)"; });
+      button.addEventListener("blur", function () { button.style.transform = "translate(0,0)"; });
+    });
+  }
+})();
+</script>
+<script>
+(function () {
+  "use strict";
+  var lightbox = document.getElementById("frameworkLightbox");
+  var scrollBox = document.getElementById("frameworkLightboxScroll");
+  var img = document.getElementById("frameworkLightboxImg");
+  var closeBtn = document.getElementById("frameworkLightboxClose");
+  var triggers = document.querySelectorAll("[data-framework-trigger]");
+  var REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var lastTrigger = null;
+  var isOpen = false;
+  var closeTimer = null;
+  var prevBodyOverflow = "";
+  var prevHtmlOverflow = "";
+
+  function openLightbox(trigger) {
+    var sourceImg = trigger.querySelector("img");
+    if (!sourceImg) return;
+    lastTrigger = trigger;
+    if (closeTimer !== null) { clearTimeout(closeTimer); closeTimer = null; }
+    img.setAttribute("src", sourceImg.getAttribute("src"));
+    img.setAttribute("alt", sourceImg.getAttribute("alt") || "");
+    var label = trigger.getAttribute("data-lightbox-label");
+    if (label) lightbox.setAttribute("aria-label", label + " \u2014 enlarged view");
+    scrollBox.scrollTop = 0;
+    scrollBox.scrollLeft = 0;
+    prevBodyOverflow = document.body.style.overflow;
+    prevHtmlOverflow = document.documentElement.style.overflow;
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
+    lightbox.hidden = false;
+    isOpen = true;
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        if (isOpen) lightbox.classList.add("is-open");
+      });
+    });
+    closeBtn.focus();
+  }
+
+  function closeLightbox() {
+    if (!isOpen) return;
+    isOpen = false;
+    lightbox.classList.remove("is-open");
+    document.body.style.overflow = prevBodyOverflow;
+    document.documentElement.style.overflow = prevHtmlOverflow;
+    function finishClose() {
+      closeTimer = null;
+      if (!isOpen) {
+        lightbox.hidden = true;
+        img.removeAttribute("src");
+      }
+    }
+    if (REDUCED) finishClose();
+    else closeTimer = setTimeout(finishClose, 230);
+    if (lastTrigger) lastTrigger.focus();
+  }
+
+  Array.prototype.forEach.call(triggers, function (trigger) {
+    trigger.addEventListener("click", function () { openLightbox(trigger); });
+  });
+
+  closeBtn.addEventListener("click", function () { closeLightbox(); });
+
+  img.addEventListener("click", function (e) {
+    e.stopPropagation();
+  });
+
+  lightbox.addEventListener("click", function (e) {
+    if (e.target === img || e.target === closeBtn) return;
+    closeLightbox();
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (!isOpen) return;
+    if (e.key === "Escape") {
+      e.preventDefault();
+      closeLightbox();
+    } else if (e.key === "Tab") {
+      e.preventDefault();
+      closeBtn.focus();
+    }
+  });
+})();
+</script>
+<script>
+(function () {
+  "use strict";
+  var header = document.querySelector(".site-nav");
+  if (!header) return;
+  function syncHeaderHeight() {
+    var h = header.getBoundingClientRect().height;
+    if (h > 0) document.documentElement.style.setProperty("--site-nav-height", h + "px");
+  }
+  syncHeaderHeight();
+  window.addEventListener("resize", syncHeaderHeight);
+  window.addEventListener("load", syncHeaderHeight);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(syncHeaderHeight);
+})();
+</script>
+</body>
+</html>
